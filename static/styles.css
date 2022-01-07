@@ -1,0 +1,22 @@
+
+
+.star-item::before {
+    content: '\272F \0020';
+    color: purple;
+}
+
+.program::before {
+    content: '\2764 \0020';
+    font-size: 0.8em;
+    position: relative;
+    bottom: 0.2em;
+}
+
+
+
+
+.ms-6 {
+    padding-left: 4em;
+}
+
+

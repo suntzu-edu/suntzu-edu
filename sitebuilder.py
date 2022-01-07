@@ -17,6 +17,9 @@ def index():
 def about():
     return render_template('about.html')
 
+@app.route('/programs')
+def programs():
+    return render_template('programs.html')
 
 
 app.run(host='0.0.0.0', port=5005)
