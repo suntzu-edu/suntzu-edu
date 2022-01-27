@@ -1,0 +1,97 @@
+
+.star-item::before {
+    content: '\272F \0020';
+    color: purple;
+}
+
+.program::before {
+    content: '\2764 \0020';
+    font-size: 0.8em;
+    position: relative;
+    bottom: 0.2em;
+}
+
+.ms-6 {
+    padding-left: 4em;
+}
+
+.active {
+    color: black;
+    background-color: rgb(200, 200, 200);
+}
+
+.color1 {
+    color: rgba(109, 91, 223, 1);
+}
+
+.color2 {
+    color: rgba(255, 99, 71, 1);
+}
+
+
+.divider {
+    text-align: center;
+    margin: auto;
+}
+
+
+div.display {
+    width: 30%;
+    max-width: 510px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+
+div.quote_block {
+    padding-top: 40px;
+    clear: both;
+}
+
+/*
+div.quote_block::before {
+    content: "\27A5";
+}
+*/
+
+
+
+/* English text||quotes  */
+div.quote_block div.text {
+    padding-top: 10px;  
+    clear: both;
+}
+
+/* Chinese text||quotes inside div.quote_header */
+div.quote_block .quotes {
+    font-weight: bold;
+}
+
+/* applies to both En and Ch */
+div.quote_block div.comments {
+    padding-top: 5px;  
+    color: rgb(63, 191, 191);
+    clear: both;
+}
+
+
+
+sup {
+    font-size: 0.5em;
+}
+
+
+div.quote_block .info {
+    float: right;
+    font-style: italic;
+}
+
+
+small {
+    float:right;
+    padding-right: 4em;
+}
+
+
+
+

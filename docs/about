@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/cbc558647c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/styles.css">
+    <title>Suntzu.edu</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="/">Suntzu Academy</a>
+          <!--
+          <a class="disabled text-muted" href="#">中文</a>
+          -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav ms-auto mx-5">
+              <li class="nav-item">
+                  <a class="nav-link" id="home"   aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="about" aria-current="page" href="/about">About us</a>
+                </li>
+                <li class="nav-item">
+              <a class="nav-link" id="programs" aria-current="page" href="/programs">Programs</a>
+                </li>
+                <li class="nav-item">
+              <a class="nav-link" id="notes" aria-current="page" href="/notes">Notes</a>
+                </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    
+
+
+    <div class="container-fluid mt-5">
+
+        <h5> <i class="fas fa-align-justify"></i> Mission</h5>
+        <p class="ms-5">Suntzu Academy is established to take the mission of overthrowing the Chinese Communist Party and reconstructing a modern republic of China for Chinese people. 
+        </p>
+
+        <h5> <i class="fas fa-align-justify"></i> Core Values</h5>
+        <p class="ms-5">
+        We understand that we won't achieve our goal unless the majority Chinese people are with us. Therefore, we are going to facilitate the coming of the Age of Enlightenment for Chinese people like the one in Europe in the 18th century. <br> <br>
+        Here's a brief description of the Age of Enlightenment in Europe: <br>
+        The Enlightenment was a philosophical movement that dominated in Europe during the 18th century. It was centered around the idea that <em>reason</em> is the primary source of authority and legitimacy, and it advocated such ideals as liberty, progress, tolerance, fraternity, constitutional government, and separation of church and state. 
+        <br> <br>
+        The ultimate goal of the enlightenment is that the majority of Chinese people embraces the Laws of Nature mentioned in <em>The Declaration of Independence</em> that 'All men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty, and the pursuit of Happiness. -- That to secure these rights, Governments are instituted among Men, deriving their just powers from the consent of the governed, -- That whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it, and to institute new Government, laying its foundation on such principles and organizing its powers in such form, as to them shall seem most likely to effect their Safety and Happiness.' 
+
+        <br><br>
+        Suntzu Academy put faith and love at the top of our list; We love God, love our ancestors, and love traditional Chinese cultures. With that in mind, we practice military skills and learn military knowledge and technology.</p>
+
+
+        <h5> <i class="fas fa-align-justify"></i> Operation</h5>
+        <p class="ms-5">Suntzu Academy runs independently. There's no instructors, no management teams, no weapons, no funds, no graduates at this moment; Of course, there's no tuitions either. 大樹 is in charge of the operation.</p> 
+
+        <h5> <i class="fas fa-align-justify"></i> Principle</h5>
+        <div class="ms-5">
+        <ol>
+            <li>  The army should not serve any political party but the people and the country.
+            </li>
+
+            <li>
+        A well regulated Militia, being necessary to the security of a free state/province, the right of the people to keep and bear Arms, shall not be infringed.    -- in reference to Second Amendment of the Consitution of the United States
+            </li>
+        </ol>
+        </div>
+        
+
+        <h5> <i class="fas fa-align-justify"></i> Join us</h5>
+        <p class="ms-5">The way of joining us is to participate in at least one of available academic programs -- Christianity, Confucianism on Clubhouse. This process will help us learn each other better and help you find out whether Suntzu Academy suits you well. All we need is your time and involvement. </p>
+        <p class="ms-5">Clubhouse contact: @suntzu-edu 大樹; club: 孫子軍校 <br>
+        Twitter handler: @suntzu_edu <br>
+        Email: suntzu_edu@protonmail.com
+        </p>
+
+    </div>
+
+
+
+    <script>
+        let url = `/about`;
+        switch (url) {
+            case "/": 
+                document.querySelector("a#home").classList.add("active");
+                break;
+            case "/about":
+                document.querySelector("a#about").classList.add("active");
+                break;
+            case "/programs":
+                document.querySelector("a#programs").classList.add("active");
+                break;
+            case "/notes":
+                document.querySelector("a#notes").classList.add("active");
+                break;
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+
+
+
+
+</html>
