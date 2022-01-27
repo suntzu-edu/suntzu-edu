@@ -16,5 +16,8 @@
     padding-left: 4em;
 }
 
-
+.active {
+    color: black;
+    background-color: rgb(200, 200, 200);
+}
 
