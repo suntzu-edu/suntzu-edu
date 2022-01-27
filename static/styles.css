@@ -48,10 +48,11 @@ div.quote_block {
     clear: both;
 }
 
+/*
 div.quote_block::before {
     content: "\27A5";
-
 }
+*/
 
 
 
