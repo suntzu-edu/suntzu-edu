@@ -28,7 +28,10 @@
                     <a class="nav-link" id="about" aria-current="page" href="{{url_for('about')}}">About us</a>
                 </li>
                 <li class="nav-item">
-              <a class="nav-link" id="academics" aria-current="page" href="{{url_for('programs')}}">Academics</a>
+              <a class="nav-link" id="programs" aria-current="page" href="{{url_for('programs')}}">Programs</a>
+                </li>
+                <li class="nav-item">
+              <a class="nav-link" id="notes" aria-current="page" href="{{url_for('notes')}}">Notes</a>
                 </li>
           </ul>
         </div>
@@ -48,7 +51,10 @@
                 document.querySelector("a#about").classList.add("active");
                 break;
             case "/programs":
-                document.querySelector("a#academics").classList.add("active");
+                document.querySelector("a#programs").classList.add("active");
+                break;
+            case "/notes":
+                document.querySelector("a#notes").classList.add("active");
                 break;
         }
     </script>

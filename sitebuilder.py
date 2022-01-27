@@ -21,5 +21,10 @@ def about():
 def programs():
     return render_template('programs.html')
 
+@app.route('/notes')
+def notes():
+    return render_template('notes.html')
+
+
 
 app.run(host='0.0.0.0', port=5005)
