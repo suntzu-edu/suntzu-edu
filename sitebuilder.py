@@ -21,15 +21,15 @@ freezer = Freezer(app)
 def index():
     return render_template('index.html')
 
-@app.route('/about')
+@app.route('/about/')
 def about():
     return render_template('about.html')
 
-@app.route('/programs')
+@app.route('/programs/')
 def programs():
     return render_template('programs.html')
 
-@app.route('/notes')
+@app.route('/notes/')
 def notes():
     return render_template('notes.html')
 
@@ -47,4 +47,3 @@ if __name__ == '__main__':
         app.run(host='0.0.0.0', port=5007)
 
 
-app.run(host='0.0.0.0', port=5005)
