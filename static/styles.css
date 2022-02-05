@@ -92,6 +92,10 @@ small {
     padding-right: 4em;
 }
 
+.list-group {
+    display: inline-block;
+
+}
 
 
 
