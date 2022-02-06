@@ -118,13 +118,15 @@
 
         <h6 class="ms-5 star-item">Date & Time:</h6>
         <p class="ms-6">  
-        to be decided;
+            Beijing Wednesday 11:30pm - 12:30am; New York Wednesday 8:30am - 9:30am<br>
+            AND Beijing Saturday 11:30pm - 12:30am; New York Saturday 8:30am - 9:30am<br>
         </p>
         
-        <h6 class="ms-5 star-item">Text:</h6>
-        <p class="ms-6">  
-        文本： <a href="https://ctext.org/analects/zh">中國哲學書電子化計劃</a> 
-        </p>
+        <h6 class="ms-5 star-item"><em>文本 :</em></h6>
+        <div class="ms-6 mb-3">  
+            <a href="https://ctext.org/analects/zh">中國哲學書電子化計劃</a> 
+            <br> <a href="https://www.zdic.net/">漢典</a>
+        </div>
 
         <h6 class="ms-5 star-item">Current Progress:</h6>
         <p class="ms-6">  
@@ -234,13 +236,13 @@
             case "/": 
                 document.querySelector("a#home").classList.add("active");
                 break;
-            case "/about":
+            case "/about/":
                 document.querySelector("a#about").classList.add("active");
                 break;
-            case "/programs":
+            case "/programs/":
                 document.querySelector("a#programs").classList.add("active");
                 break;
-            case "/notes":
+            case "/notes/":
                 document.querySelector("a#notes").classList.add("active");
                 break;
         }

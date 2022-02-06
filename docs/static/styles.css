@@ -48,12 +48,14 @@ div.quote_block {
     clear: both;
 }
 
+
 /*
-div.quote_block::before {
+div.quote_block div::before {
     content: "\27A5";
+    position: relative;
+    right: 2em;
 }
 */
-
 
 
 /* English text||quotes  */
