@@ -155,6 +155,10 @@ span.word {
     text-underline-offset: 2px;
 }
 
+button#btn {
+    font-size: 25%;
+}
+
 
 
 
