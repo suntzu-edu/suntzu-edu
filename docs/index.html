@@ -35,6 +35,9 @@
                 <li class="nav-item">
               <a class="nav-link" id="notes" aria-current="page" href="/notes/">Notes</a>
                 </li>
+                <li class="nav-item">
+              <a class="nav-link" id="collections" aria-current="page" href="/collections/">collections</a>
+                </li>
           </ul>
         </div>
       </div>
@@ -98,6 +101,9 @@
                 break;
             case "/notes/":
                 document.querySelector("a#notes").classList.add("active");
+                break;
+            case "/collections/":
+                document.querySelector("a#collections").classList.add("active");
                 break;
         }
 

@@ -36,7 +36,7 @@
 
 
 div.display {
-    width: 30%;
+    width: 32%;
     max-width: 510px;
     min-width: 300px;
     margin: 0 auto;
@@ -44,30 +44,41 @@ div.display {
 
 
 div.quote_block {
-    padding-top: 40px;
+    padding-top: 30px;
     clear: both;
 }
 
-
 /*
-div.quote_block div::before {
-    content: "\27A5";
-    position: relative;
-    right: 2em;
+div.quote_block div:nth-child(2) {
+    border: solid 1px black;
 }
 */
 
 
+/*
+div.quote_block div:nth-child(1)::before {
+    content: "\27A5";
+    float: left;
+}
+*/
+
+div.quote_block .arrow {
+    padding-right: 15px;
+}
+
+
+
 /* English text||quotes  */
 div.quote_block div.text {
-    padding-top: 10px;  
     clear: both;
 }
 
 /* Chinese text||quotes inside div.quote_header */
+/*
 div.quote_block .quotes {
     font-weight: bold;
 }
+*/
 
 /* applies to both En and Ch */
 div.quote_block div.comments {
@@ -98,6 +109,60 @@ small {
     display: inline-block;
 
 }
+
+
+/* collections  */
+
+.lecture_title {
+    gap: 1em;
+}
+
+.lecture_body {
+    gap: 1em;
+}
+
+/*
+.lecture_title > * {
+    border: solid 1px black;
+}
+*/
+
+.lecture_title .title {
+    font-size: 3em;
+    color: coral;
+}
+
+.subtitle {
+    margin-bottom: 5px;
+    clear: both;
+    color: darkblue;
+}
+
+.scripture {
+    color: rgb(63, 191, 191);
+}
+
+.annotation {
+    padding-left: 2em;
+    border-left: 1px dashed black;
+}
+
+
+sup {
+    font-size: small;
+}
+
+span.word {
+    text-decoration: underline wavy purple;
+    text-underline-offset: 2px;
+}
+
+button#btn {
+    font-size: 25%;
+}
+
+
+
 
 
 
