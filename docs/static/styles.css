@@ -157,6 +157,13 @@ span.word {
     text-underline-offset: 2px;
 }
 
+span.word2 {
+    text-decoration: underline wavy #ff347f;
+    text-underline-offset: 2px;
+}
+
+
+
 button#btn {
     font-size: 25%;
 }
