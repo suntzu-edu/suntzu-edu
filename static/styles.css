@@ -129,7 +129,7 @@ small {
 
 .lecture_title .title {
     font-size: 3em;
-    color: coral;
+    color: #e85b48;
 }
 
 .subtitle {
@@ -167,6 +167,12 @@ span.word2 {
 button#btn {
     font-size: 25%;
 }
+
+.highlight {
+    background-color: #ffaaa5;
+
+}
+
 
 
 
