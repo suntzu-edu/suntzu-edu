@@ -33,11 +33,14 @@ def programs():
 def notes():
     return render_template('notes.html')
 
-@app.route('/collections/')
-def collections():
-    return render_template('collections.html')
+@app.route('/collection/')
+def collection():
+    return render_template('collection.html', pages=pages)
 
-
+@app.route('/<path:path>/')
+def page(path):
+    page = pages.get_or_404(path)
+    return render_template('page.html', page=page)
 
 @freezer.register_generator
 def pagelist():

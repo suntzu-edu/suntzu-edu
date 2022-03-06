@@ -1,0 +1,37 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="container-fluid layout-c-32 mt-3 bg-color-bookpage stretch-100">
+        <div class="heartsutra">
+            <h4>心經</h4>
+
+
+        </div>
+
+
+
+    </div>
+
+    {% for page in pages %}
+        {% if page.path.startswith('collection') %}
+            <script>
+                var newItem = $("<div></div>", {"class": "c-body-item"})
+                $("<a href= {{ url_for('page', path=page.path) }}>  {{ page.title }}   </a> ").appendTo(newItem)
+                $("<span> [{{page.author}}] </span>").appendTo(newItem)
+                $(".heartsutra").append(newItem)
+            </script>
+        {% endif %}
+    {% endfor %}
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
