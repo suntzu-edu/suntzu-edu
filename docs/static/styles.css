@@ -47,8 +47,22 @@ html, body {
     margin: 0 auto;
 }
 
+
+.layout-c-80 {
+    width: 60%;
+    margin: 0 auto;
+}
+
 .bg-color-bookpage {
     background-color: #f2dcb1 ;
+}
+
+.bg-color-book1 {
+    background-color: rgba(255, 235, 187, .5);
+}
+
+.bg-color-book2 {
+    background-color: rgba(255, 235, 187, .1);
 }
 
 .stretch-100 {
@@ -107,16 +121,17 @@ sup {
 }
 
 
-div.quote_block .info {
+.info {
     float: right;
     font-style: italic;
 }
 
-
-small {
-    float:right;
-    padding-right: 4em;
+.info_zh {
+    float: right;
+    font-size: 0.95em;
+    padding-right: 2em;
 }
+
 
 .list-group {
     display: inline-block;
@@ -126,13 +141,18 @@ small {
 
 /* collections  */
 
-.lecture_title {
+.gap-1 {
     gap: 1em;
 }
 
-.lecture_body {
-    gap: 1em;
+.l-height-2 {
+    line-height: 2em;
 }
+
+.f-size-1_6 {
+    font-size: 1.6em;
+}
+
 
 /*
 .lecture_title > * {
@@ -140,24 +160,33 @@ small {
 }
 */
 
-.lecture_title .title {
+.lecture_title {
     font-size: 3em;
     color: #e85b48;
 }
 
 .subtitle {
+    margin-top: 10px;
     margin-bottom: 5px;
-    clear: both;
     color: darkblue;
 }
 
+.clear-lr {
+    clear: both;
+}
+
+
 .scripture {
-    color: rgb(63, 191, 191);
+    color: rgb(63, 191, 191); 
+    /* color: #22cc00; */
 }
 
 .annotation {
     padding-left: 2em;
     border-left: 1px dashed black;
+}
+
+.right-border {
 }
 
 
@@ -182,8 +211,12 @@ button#btn {
 }
 
 .highlight {
-    background-color: #ffaaa5;
+    background-color: rgba(255, 170, 165, .5);
 
+}
+
+.f-size-1_1{
+    font-size: 1.1em;
 }
 
 

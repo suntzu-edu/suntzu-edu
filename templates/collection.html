@@ -1,13 +1,11 @@
 
-{% extends "base.html" %}
+{% extends "base_zh.html" %}
 
 {% block content %}
 
     <div class="container-fluid layout-c-32 mt-3 bg-color-bookpage stretch-100">
         <div class="heartsutra">
             <h4>心經</h4>
-
-
         </div>
 
 
@@ -19,7 +17,10 @@
             <script>
                 var newItem = $("<div></div>", {"class": "c-body-item"})
                 $("<a href= {{ url_for('page', path=page.path) }}>  {{ page.title }}   </a> ").appendTo(newItem)
-                $("<span> [{{page.author}}] </span>").appendTo(newItem)
+                $("<span></span>", {
+                    "class": "info_zh",
+                    text: "[{{page.author}}]"
+                }).appendTo(newItem)
                 $(".heartsutra").append(newItem)
             </script>
         {% endif %}
