@@ -45,9 +45,17 @@
     
     
 
-    <div class="container-fluid mt-3 px-5 f-size-1_1">
+    <div class="container-fluid mt-3 px-5 f-size-1_1" id='container1'>
     <div class="row d-flex align-items-start">
         <div id="col1" class="col-md-8 col-xs-12 flex-grow-1">
+            <div class="lt-corner d-inline-flex flex-column">
+                <button id='btn-bg-color' class='bg-color-book2'>
+                   背景色 
+                </button>
+                <button id="btn-font">
+                    粗字體
+                </button>
+            </div>
             <!-- lectures -->
 
             <!-- title block -->
@@ -677,6 +685,33 @@
         }
     });
     console.log(`window's width is ${window.innerWidth}`);
+
+    $("#btn-bg-color").click(function() {
+        let btn = $("#btn-bg-color");
+        let ctn1 = $("#container1");
+        if (btn.hasClass("bg-color-book2")) {
+            btn.removeClass("bg-color-book2");
+            ctn1.addClass("bg-color-book2");
+        } else {
+            btn.addClass("bg-color-book2");
+            ctn1.removeClass("bg-color-book2");
+        }
+    })
+    
+    $("#btn-font").click(function() {
+        let btn = $("#btn-font");
+        let ctn1 = $("#container1");
+            if (ctn1.hasClass("f-weight-600")) {
+                btn.text("粗字體");
+                ctn1.removeClass("f-weight-600");
+            } else {
+                ctn1.addClass("f-weight-600");
+                btn.text("默認體");
+            }
+    })
+
+
+
 </script>
 
 

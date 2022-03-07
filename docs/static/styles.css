@@ -62,7 +62,11 @@ html, body {
 }
 
 .bg-color-book2 {
-    background-color: rgba(255, 235, 187, .1);
+    background-color: rgba(255, 235, 187, .2);
+}
+
+.bg-color-white {
+    background-color: white;
 }
 
 .stretch-100 {
@@ -153,6 +157,9 @@ sup {
     font-size: 1.6em;
 }
 
+.f-weight-600 {
+    font-weight: 600;
+}
 
 /*
 .lecture_title > * {
@@ -163,6 +170,12 @@ sup {
 .lecture_title {
     font-size: 3em;
     color: #e85b48;
+}
+
+.lt-corner {
+    position: absolute;
+    top: 4em;
+    left: 3em;
 }
 
 .subtitle {
