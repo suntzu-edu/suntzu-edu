@@ -145,9 +145,10 @@ sup {
 
 /* collections  */
 
-.gap-1 {
-    gap: 1em;
+.gap-0_6 > div {
+    margin: .6em;
 }
+
 
 .l-height-2 {
     line-height: 2em;
@@ -172,16 +173,14 @@ sup {
     color: #e85b48;
 }
 
+.subtitle {
+    color: darkblue;
+}
+
 .lt-corner {
     position: absolute;
     top: 4em;
     left: 3em;
-}
-
-.subtitle {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    color: darkblue;
 }
 
 .clear-lr {
