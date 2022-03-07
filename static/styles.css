@@ -69,6 +69,18 @@ html, body {
     background-color: white;
 }
 
+/* for word/word2 in heartsutra_yuanying */
+.bg-color-bbe4e9 {
+    background-color: #bbe4e9;
+}
+
+.color-dc2f2f {
+    /* color: #c24d2c; 
+    color: #247291; */
+    color: #dc2f2f;
+}
+
+
 .stretch-100 {
     height: 100%;
     position: relative;
