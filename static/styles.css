@@ -10,11 +10,17 @@ body {
 }
 */
 
-
+.star-item {
+    margin-top: 1em;
+}
 
 .star-item::before {
     content: '\272F \0020';
     color: purple;
+}
+
+.star-item + div {
+    padding: 0 2em;
 }
 
 .program::before {
