@@ -1,6 +1,6 @@
 
-html, body {
-    height: 90%;
+body {
+    min-height: 100%;
 }
 
 
@@ -191,7 +191,7 @@ sup {
 
 .lt-corner {
     position: absolute;
-    top: 4em;
+    top: 5em;
     left: 3em;
 }
 
@@ -243,6 +243,11 @@ button#btn {
     font-size: 1.1em;
 }
 
+/*
+#container1 {
+    border: 1px solid black;
+}
+*/
 
 
 
