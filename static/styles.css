@@ -4,6 +4,13 @@ body {
     min-height: 100vh;
 }
 
+/*
+#ctn-about {
+    border: 1px solid black;
+}
+*/
+
+
 
 .star-item::before {
     content: '\272F \0020';
