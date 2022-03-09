@@ -1,12 +1,26 @@
 
-html, body {
-    height: 90%;
+body {
+    width: 100%;
+    min-height: 100vh;
 }
 
+/*
+#ctn-about {
+    border: 1px solid black;
+}
+*/
+
+.star-item {
+    margin-top: 1em;
+}
 
 .star-item::before {
     content: '\272F \0020';
     color: purple;
+}
+
+.star-item + div {
+    padding: 0 2em;
 }
 
 .program::before {
@@ -191,7 +205,7 @@ sup {
 
 .lt-corner {
     position: absolute;
-    top: 4em;
+    top: 5em;
     left: 3em;
 }
 
@@ -206,7 +220,6 @@ sup {
 }
 
 .annotation {
-    padding-left: 2em;
     border-left: 1px dashed black;
 }
 
@@ -243,6 +256,11 @@ button#btn {
     font-size: 1.1em;
 }
 
+/*
+#container1 {
+    border: 1px solid black;
+}
+*/
 
 
 
