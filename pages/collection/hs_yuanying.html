@@ -4,31 +4,43 @@ category: heartsutra
 
 
 <div class="container-fluid my-3 px-5 f-size-1_1" >
-    <div class="row align-content-start" id='container1' >
+    <div class="row" id='container1' >
+        <!-- two columns: lecture and annotation -->
         <div id="col1" class="col-md-8 col-xs-12 flex-grow-1">
-
-            <!-- two help buttons; position: absolute; off the normal document flow -->
-            <div class="lt-corner d-inline-flex flex-column">
+            <!-- buttons above the title -->
+            <div class="d-flex">
                 <button id='btn-bg-color' class='bg-color-book2'>
                    背景色 
                 </button>
                 <button id="btn-font">
                     粗字體
                 </button>
+                <button id='btn' class="d-none d-md-inline">隱藏註釋</button> 
             </div>
-
-            <!-- lectures -->
-
             <!-- title block -->
-            <div class="gap-1 d-flex flex-column align-items-center mb-5">
+            <div class='text-center mt-5'>
                 <div class="lecture_title">
-                    <!-- button is only available when screen is bigger than mediuim -->
-                    般若心經講義  <button id='btn' class="d-none d-md-inline">隱藏註釋</button>  
+                    般若心經講義   
                 </div>
-                <div>
+
+                <div class="mb-3">
                     圓瑛大師著
                 </div>
-                    <div class="menu text-center">
+
+                <div class="menu text-center">
+                    <!--   
+                    <div class="f-right d-flex flex-column pt-2">
+                        <button id='btn-bg-color' class='bg-color-book2'>
+                           背景色 
+                        </button>
+                        <button id="btn-font">
+                            粗字體
+                        </button>
+                        <button id='btn' class="d-none d-md-inline">隱藏註釋</button> 
+                    </div>
+                    -->
+
+                    <div>
                         <a href="#anchor1">
                         自序
                         </a>
@@ -45,12 +57,15 @@ category: heartsutra
                         甲二 釋經文
                         </a>
                     </div>
-            </div>
+
+                </div>
+
+            </div>  <!-- title block ends -->
 
             <!-- text block -->
-            <div id="lecture_text" class="d-flex flex-column gap-0_6 ">
+            <div id="lecture_text">
 
-                <div id="anchor1" class="subtitle clear-lr">
+                <div id="anchor1" class="c-darkblue mt-4 m-1_2em">
                 自序
                 </div>
 
@@ -58,11 +73,11 @@ category: heartsutra
                     夫<span class='word'>實相</span>般若，即自心之<span class="word">理體</span>；觀照般若，乃自心之妙用。體用不離於一心，迷悟自隔乎千里。迷者，非失似失；悟之，無得為得。但能迴光返照，何難<span class='word'>即</span>相成空。法藏大師云：「<span class='word'>良以</span><span class='word2'>真空</span>未嘗不有，即有以辨於空；<span class='word'>幻有</span><span class='word2'>未始</span>不空，即空以明於有。有空，有故不有；空有，空故不空。不空之空，空而非斷；不有之有，有而非常。<span class='word'>四執</span>既亡，百非斯<span class='word'>遣</span>。般若<span class='word'>玄旨</span>，斯之謂歟！」研味其言，巧深悟實相般若，無相無不相之理；故能將空有雙融，真俗無礙，和盤托出。此經、文雖簡約，義則幽深。揭六百卷之精華，為十二分之骨髓。<span class='highlight'>余乙丑至泉州，重興大開元寺，創辦開元慈兒院。</span>次年莆田縣梅峰寺，請講此經。以斯寺係余□派祖庭，是以往結法緣。為時匆促，援筆略書講義一卷，並不分科。此稿為佛學書局流通已久，此次重印，特為增修，以廣法施。惟願見聞隨喜，共入般若玄門；信解修持，同登<span class='word'>涅槃</span><span class='word2'>彼岸</span>矣。
                 </div>
 
-                <div class="align-self-end">
+                <div class="f-right-rel">
             佛歷二千九百六十一年十月望日序於悟心堂 
                 </div>
 
-                <div id="anchor2" class="subtitle clear-lr">
+                <div id="anchor2" class="c-darkblue clear-lr">
                 般若心經講義序
                 </div>
 
@@ -74,11 +89,11 @@ category: heartsutra
                 晚學性言李昇揚謹序 
                 </div>
 
-                <div class="subtitle clear-lr">
+                <div class="c-darkblue clear-lr">
                 般若波羅密多心經講義
                 </div>
 
-                <div id="anchor3" class="subtitle clear-lr">
+                <div id="anchor3" class="c-darkblue clear-lr">
                 甲一  解題目
                 </div>
 
@@ -155,11 +170,11 @@ category: heartsutra
                     此經單法立名，實相為體，觀照為宗，度苦為用，<span class='word'>熟酥</span>為教相。於如來五時教法中，第四時所說。如來十九出家，五載參方，六年苦行，三十成道。說法四十九年，而分五時：初、華嚴時，轉根本無上法輪。二、阿含時，隱大施小。三、方等時，引小入大。四、般若時，轉偏成圓。五、法華涅槃時，開權顯實。此經係第四般若時所說。般若歷時最長，計二十二年，共說八部般若，此「摩訶般若」所攝，為大部之精要。故譯出單行，令人易於受持。傳至中華，凡五譯。今從唐三藏法師玄奘所譯。先解題目竟。
                 </div>
 
-                <div id="anchor4" class="subtitle clear-lr">
+                <div id="anchor4" class="c-darkblue clear-lr">
                 甲二  釋經文
                 </div>
 
-                <div class="subtitle clear-lr">
+                <div class="c-darkblue clear-lr">
                 乙一  顯了般若
                 </div>
 
@@ -168,11 +183,11 @@ category: heartsutra
                 </div>
 
 
-                <div class="subtitle clear-lr">
+                <div class="c-darkblue clear-lr">
                 丙一  經家敘引
                 </div>
 
-                <div class="subtitle clear-lr">
+                <div class="c-darkblue clear-lr">
                 丁一  明能觀人
                 </div>
 
@@ -189,7 +204,7 @@ category: heartsutra
                     「菩薩」二字，梵語菩提薩埵，菩提此云覺，薩埵此云有情。今稱菩薩者，從略也。乃是發大心修大乘者之稱，小乘羅漢辟支佛，不能當此之稱。今世人稱土地城隍亦稱菩薩者，訛也。按覺有情三字，當據菩薩修行，作三種解釋：一、約自利釋：雖已分證如來覺道，尚有識情未盡。二、約利他釋：普覺十方法界，一切在迷有情（有情，即眾生之別稱）。三、約兩利釋：上求無上覺道，下化一切有情。具此三義，故稱覺有情。亦稱大士、開士、法王子。<span class='highlight'>菩薩六度齊修，萬行繁興。三違本願，普度眾生。不捨塵勞，而作佛事。寧可損己，專為利生；正是入世。有人說，佛教以出世為宗，是消極與社會國家無益。他不知佛教有大乘故也。大乘菩薩，不但入世，常在異類中行；驢胎馬腹，是其行處。又云：我不入地獄，誰入地獄；常在苦趣，救度眾生；其積極為何如也。</span>
                 </div>
 
-                <div class="subtitle clear-lr">
+                <div class="c-darkblue clear-lr">
                 丁二  明所修行
                 </div>
 
@@ -201,7 +216,7 @@ category: heartsutra
                     「行」即菩薩因地所修清淨法行，用耳根工夫，反聞聞自性。「深」者，一門深入，入一無妄，彼六知根（即眼、耳、鼻、舌、身、意）一時清淨。「般若」乃<span class='word'>三德</span>之一，由自性法身德真理之中，本來具足般若德之真智。修行般若德，自可得解脫德之大用。行深般若，即以真智照真理，工夫深造之境。真理如摩尼珠，真智如珠之光；智不離理，如光不離珠。大用，如珠光照。「照見五蘊」二句，即真智所發之大用也。「波羅密」，華言到彼岸。既行深般若，則真智契真理，智光不外洩。六根對六塵之境，如鏡照像，不生愛著。既不愛著，自不作孽受苦，故可離生死此岸，而到涅槃彼岸。「多」者，定也。梵語三昧，又云三摩；即觀自在菩薩，從聞、思、脩入三摩地之圓通大定也。「時」即定慧均等，寂照不二，觀聽圓明，自在無礙之時也。
                 </div>
 
-                <div class="subtitle clear-lr">
+                <div class="c-darkblue clear-lr">
                 丁三  明觀行境
                 </div>
 
@@ -217,7 +232,7 @@ category: heartsutra
                     五蘊者，色受想行識。色，<span class='word'>質礙</span>義：即是眾生世界，內外四大之色法。受，領納義；即是受心所（心所即心使，心之所屬）領納前塵諸<span class='word'>境界</span>。想，想像義；即想心所取所緣境界之分劑故。行，遷流義；即思心所念念相續，遷流不住故。識，了別義；即<span class='word'>八識心王</span>了別一切所緣之境。因此五蘊蓋覆真性，般若智光不得透露。妄執身心世界，悉皆實有。不知性本真空，所以妄生貪著，不能看破，常沉生死苦海。菩薩照見五蘊，一一皆空，不僅無相之受想行識是空，即<span class='word'>有相</span>四大和合之色亦空。四大者，地水火風也。四大為生人物之本，一切皆由四大和合而成。如現前桌上花瓶，先由地大之土，和以水大成泥，方可為瓶。加以火大燒之，燒時必加風力。人亦四大和合所成：皮肉筋骨屬地大，精血痰淚屬水大，周身煖觸屬火大，出入氣息與運轉屬風大。四大和合，虛妄名生。四大別離，虛妄名滅，人若死時，風大先散；何以證知？鼻中無氣息，手足不運轉。次則火大而散，周身冷觸。若不收斂，水大則必流溢於外。地大之皮肉先化，筋骨後銷，到底成空。此但約滅色歸空，淺近之空理。究竟現在世界眾生，五蘊之法，猶如夢境，當體即空。眾生之不悟是空者，因無般若智照，妄生執著，如夢中執夢境為實有；夢境豈不是當體即空乎？然此種譬喻，恐猶疑惑；謂現前所見之世界眾生，非夜間夢中所見，乃是日間大眾公共所見之境，何得比例？這等正是夢話。當知一夕之夢為小夢，一生之夢為大夢。不悟，都是在夢中度日。古人謂大夢誰先覺，即此義也。一覺則般若智照現前：無我相，則色蘊空矣；無我見，則受想行識四蘊空。身心世界一一皆空。
                 </div>
 
-                <div class="subtitle clear-lr">
+                <div class="c-darkblue clear-lr">
                 丁四  明觀實效
                 </div>
 
@@ -229,12 +244,12 @@ category: heartsutra
 「度」者，脫也。「切」字，去聲讀之，非切物之切。「一切」者，包括無餘之義。界內有見思煩惱之苦，分段生死之厄。界外有無明煩惱之苦，變易生死之厄。若照見蘊空，超登彼岸，自可度脫一切煩惱生死之苦厄矣。
                 </div>
 
-                <div class="subtitle clear-lr">
+                <div class="c-darkblue clear-lr">
                 丙二  正說般若
                 </div>
 
 
-                <div class="subtitle clear-lr">
+                <div class="c-darkblue clear-lr">
                 丁一  斷疑情
                 </div>
 
@@ -284,7 +299,7 @@ category: heartsutra
 
                 </div>
 
-                <div class="subtitle clear-lr">
+                <div class="c-darkblue clear-lr">
                 丁二  顯法體
                 </div>
 
@@ -313,7 +328,7 @@ category: heartsutra
 更當借喻以明之：實相如摩尼珠體，五蘊如珠所現五色；珠體能現五色，性本真空，其色之現也不生，其色之去也不滅；又如映現污泥而不垢，映現清水而不淨，映現萬眾而不增，映現一身而不減。任從萬變紛紜，體本如如不動，何有生滅垢淨增減之可言。二顯法體竟。
                 </div>
 
-                <div class="subtitle clear-lr">
+                <div class="c-darkblue clear-lr">
                 丁三  明離相
                 </div>
 
@@ -375,11 +390,11 @@ category: heartsutra
 此二句，還是聲聞法界。無智者：空能證之智；無得者：空所得之理。下句解釋無得之義：以字因也，何故無得？因無所得故。聲聞所證涅槃，即自心本具真諦無生之理。昔日迷之，本來無失；今日悟之，亦復無得。如人家藏寶物，昔日遺忘，似失非失，忽然記憶，無得為得；乃是自家寶藏，本無所得故。三明離相竟。
                 </div>
 
-                <div class="subtitle clear-lr">
+                <div class="c-darkblue clear-lr">
                 丁四  辨所得
                 </div>
 
-                <div class="subtitle clear-lr">
+                <div class="c-darkblue clear-lr">
                 戊一 菩薩得涅槃斷果
                 </div>
 
@@ -408,7 +423,7 @@ category: heartsutra
 首二字皆去聲。顛者頭也，倒即倒置，凡夫迷真起妄，認妄為真，即是顛倒。夢想者：指生住異滅四種夢心，眾生輪迴生死，皆由四種夢生之惑，造作種種之業，而受無量生死，不得涅槃。此四種夢心，生時乃從生相先起，由細至麤。滅時當從滅相先除，由麤至細。如著衣者，則自內而外，脫衣者，當自外而內矣。遠離之功，由依般若，心得無礙無怖，故能離妄證真，究竟涅槃；即是成佛。五住煩惱究竟盡，二種生死究竟離，登涅槃山頂，成無上佛道，不生不滅，具足常樂我淨四德。此明菩薩得涅槃斷果竟。
                 </div>
 
-                <div class="subtitle clear-lr">
+                <div class="c-darkblue clear-lr">
                 戊二  諸佛得菩提智果
                 </div>
 
@@ -420,11 +435,11 @@ category: heartsutra
                     此佛法界。三世：指過去現在未來，各有無量諸佛，究其成佛之因，若非般若妙智大定，亦不能離生死此岸，而到涅槃彼岸。當知此般若，為十方諸佛共由之路，無有何佛，不依此而成道，故曰依。阿耨多羅：此云無上，因佛所證之果，為究竟極果，超九界以獨尊，故云無上。又指諸佛所證之理為最上一乘；實相之理，無有何法，可以更加其上，故稱無上。三藐：此云正等，指諸佛之心，真正平等，不擇冤親，普欲度脫。又指佛所證之理，乃中道平等一相之理，故云正等。一相者，一乘實相。世間諸法，種種差別，自有大小、貴賤、精麤之分，不能一相。若悟理體，畢竟無二，如世間金器之類，瓶杯釵鐲，若取其相，則諸相差別，不能平等；若取其性，則一一全體是金，自然一相。正覺者：指佛真正覺悟，四相夢破，離和合識，滅相續心；轉八識（眼耳鼻舌身意六識、第七末那識、第八阿賴耶識）成<span class='word'>四智</span>；轉前五識，成成所作智；轉第六識，成妙觀察智；轉第七識，成平等性智；轉第八識，成大圓鏡智；故稱正覺。又指佛所證之理，乃中道妙覺之理，正即中道，不偏二邊；佛依本覺體，起始覺智，中中流入，復本心源，始本合一，名為妙覺。此約人約法二種解釋。又正等云正遍，正覺云正知，即佛正遍知。何為正知？了知心生萬法，何為遍知？了知萬法不外一心。阿耨多羅三藐三菩提，即佛道之名；既已翻譯，仍留梵語者，此乃遵古不翻之例，實超九界之名。六凡眾生不覺，外道邪覺，不能稱正覺。二乘之人，悟明真諦之理，雖稱正覺，未悟平等理性，不能稱正等正覺。菩薩破無明，見法身，雖正智現前，了知心佛眾生，三無差別，平等之理，可稱正等正覺；然無明未盡，縱到等覺地位，尚且去佛一等，只稱有上士，不能稱無上正等正覺。足當此稱者，惟佛一人。此明諸佛得菩提智果竟。併上四辨所得竟。
                 </div>
 
-                <div class="subtitle clear-lr">
+                <div class="c-darkblue clear-lr">
                 丁五  歎勝益
                 </div>
 
-                <div class="subtitle clear-lr">
+                <div class="c-darkblue clear-lr">
                 戊一  別歎
                 </div>
 
@@ -461,7 +476,7 @@ category: heartsutra
 般若稱為佛母，出生一切諸佛。諸佛依此，而得究竟極果，故稱無等等咒。無有何等之法，可與齊等。此中所言咒者，即此般若便是。既然是般若，而又稱咒者，極言神效之速也。一別歎竟。
                 </div>
 
-                <div class="subtitle clear-lr">
+                <div class="c-darkblue clear-lr">
                 戊二  總歎
                 </div>
 
@@ -481,7 +496,7 @@ category: heartsutra
 又真實不虛，寓勸信意。以如來是真語者，實話者，決不虛妄哄騙於人。以上說經，經是顯文，令人得顯益。以後說咒，咒是密語，令人得密益。經咒並說，顯密相資，自可隨機得益矣。一顯了般若竟。
                 </div>
 
-                <div class="subtitle clear-lr">
+                <div class="c-darkblue clear-lr">
                 乙二  秘密章句
                 </div>
 
@@ -510,7 +525,7 @@ category: heartsutra
                 </div>
 
 
-                <div class='subtitle clear-lr mt-5'>Reference:</div>
+                <div class='c-darkblue clear-lr mt-5'>Reference:</div>
 
                 <div><a href="https://book.bfnn.org/books2/1228.htm">般若心經講義－－圓瑛大師著</a></div>
 
