@@ -40,7 +40,9 @@ def collection():
 @app.route('/<path:path>/')
 def page(path):
     page = pages.get_or_404(path)
-    return render_template('page_zh.html', page=page)
+    if page['category'] == 'heartsutra':
+        return render_template('page_zh.html', page=page)
+    return render_template('page.html', page=page)
 
 @freezer.register_generator
 def pagelist():
