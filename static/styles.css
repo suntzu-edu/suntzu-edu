@@ -60,10 +60,19 @@ body {
 }
 
 
-.layout-c-80 {
+.layout-c-60 {
     width: 60%;
     margin: 0 auto;
 }
+
+.layout-c-45 {
+    width: 45%;
+    margin: 0 auto;
+}
+
+
+
+
 
 .bg-color-bookpage {
     background-color: #f2dcb1 ;
@@ -178,9 +187,13 @@ sup {
     margin: .6em;
 }
 
+
+
+/* gap between divs under #lecture_text */
 #lecture_text > div + div {
     margin-bottom: 1.2em;
 }
+
 
 .m-1_2em {
     margin-bottom: 1.2em;

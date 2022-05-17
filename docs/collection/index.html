@@ -50,20 +50,40 @@
             <h4>心經</h4>
         </div>
 
+    </div>
+
+
+    <div class="container-fluid layout-c-32 mt-3 bg-color-bookpage stretch-100">
+
+        <div class="constitution101">
+            <h4>US Constitution 101</h4>
+        </div>
 
 
     </div>
+
 
     
         
             <script>
                 var newItem = $("<div></div>", {"class": "c-body-item"})
                 $("<a href= /collection/hs_xuanzang/>  般若波羅蜜多心經   </a> ").appendTo(newItem)
-                $("<span></span>", {
-                    "class": "info_zh",
-                    text: "[唐三藏法師玄奘]"
-                }).appendTo(newItem)
-                $(".heartsutra").append(newItem)
+
+                var cat = 'heartsutra'
+
+                if ( cat == 'heartsutra' ) {
+                    $("<span></span>", {
+                        "class": "info_zh",
+                        text: "[唐三藏法師玄奘]"
+                    }).appendTo(newItem)
+                    $(".heartsutra").append(newItem)
+                } else if (cat == 'constitution101') {
+                    $("<span></span>", {
+                        "class": "info",
+                        text: "[唐三藏法師玄奘]"
+                    }).appendTo(newItem)
+                    $(".constitution101").append(newItem)
+                }
             </script>
         
     
@@ -71,11 +91,45 @@
             <script>
                 var newItem = $("<div></div>", {"class": "c-body-item"})
                 $("<a href= /collection/hs_yuanying/>  般若心經講義   </a> ").appendTo(newItem)
-                $("<span></span>", {
-                    "class": "info_zh",
-                    text: "[圓瑛大師]"
-                }).appendTo(newItem)
-                $(".heartsutra").append(newItem)
+
+                var cat = 'heartsutra'
+
+                if ( cat == 'heartsutra' ) {
+                    $("<span></span>", {
+                        "class": "info_zh",
+                        text: "[圓瑛大師]"
+                    }).appendTo(newItem)
+                    $(".heartsutra").append(newItem)
+                } else if (cat == 'constitution101') {
+                    $("<span></span>", {
+                        "class": "info",
+                        text: "[圓瑛大師]"
+                    }).appendTo(newItem)
+                    $(".constitution101").append(newItem)
+                }
+            </script>
+        
+    
+        
+            <script>
+                var newItem = $("<div></div>", {"class": "c-body-item"})
+                $("<a href= /collection/letterToJohnJay/>  Letter To John Jay   </a> ").appendTo(newItem)
+
+                var cat = 'constitution101'
+
+                if ( cat == 'heartsutra' ) {
+                    $("<span></span>", {
+                        "class": "info_zh",
+                        text: "[George Washington]"
+                    }).appendTo(newItem)
+                    $(".heartsutra").append(newItem)
+                } else if (cat == 'constitution101') {
+                    $("<span></span>", {
+                        "class": "info",
+                        text: "[George Washington]"
+                    }).appendTo(newItem)
+                    $(".constitution101").append(newItem)
+                }
             </script>
         
     
