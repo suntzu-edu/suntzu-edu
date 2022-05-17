@@ -4,6 +4,26 @@ body {
     min-height: 100vh;
 }
 
+
+.musicalScore {
+    margin-top: 1em;
+}
+
+.musicalScore::before {
+    content: ' \1F3BC  \0020';
+}
+
+
+.musicalNote::before {
+    content: ' \1F3B5 \0020';
+}
+
+.musicalScore + div {
+    padding: 0 2em;
+}
+
+
+
 .star-item {
     margin-top: 1em;
 }
