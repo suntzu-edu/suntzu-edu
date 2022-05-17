@@ -28,14 +28,6 @@ body {
     margin-top: 1em;
 }
 
-.star-item::before {
-    content: '\272F \0020';
-    color: purple;
-}
-
-.star-item + div {
-    padding: 0 2em;
-}
 
 .program::before {
     content: '\2764 \0020';
@@ -207,6 +199,38 @@ sup {
     margin: .6em;
 }
 
+/* unicode */
+.uni-horse::before {
+    content: '\265E \0020';
+    color: green;
+}
+
+
+.star-item::before {
+    content: '\272F \0020';
+    color: purple;
+}
+
+.star-item + div {
+    padding: 0 2em;
+}
+
+
+
+/* margin */
+.indent-1em > p {
+    margin-left: 1em;
+}
+
+.indent-1em > div {
+    margin-left: 1em;
+}
+
+/* gap */
+
+.divGap-1_2em > div {
+    margin-bottom: 1.2em;
+}
 
 
 /* gap between divs under #lecture_text */
