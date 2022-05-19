@@ -67,6 +67,29 @@
         
             <script>
                 var newItem = $("<div></div>", {"class": "c-body-item"})
+                $("<a href= /collection/fedlst2/>  Federalist 2   </a> ").appendTo(newItem)
+
+                var cat = 'constitution101'
+
+                if ( cat == 'heartsutra' ) {
+                    $("<span></span>", {
+                        "class": "info_zh",
+                        text: "[John Jay]"
+                    }).appendTo(newItem)
+                    $(".heartsutra").append(newItem)
+                } else if (cat == 'constitution101') {
+                    $("<span></span>", {
+                        "class": "info",
+                        text: "[John Jay]"
+                    }).appendTo(newItem)
+                    $(".constitution101").append(newItem)
+                }
+            </script>
+        
+    
+        
+            <script>
+                var newItem = $("<div></div>", {"class": "c-body-item"})
                 $("<a href= /collection/hs_xuanzang/>  般若波羅蜜多心經   </a> ").appendTo(newItem)
 
                 var cat = 'heartsutra'

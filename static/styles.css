@@ -85,9 +85,16 @@ body {
 
 
 
-
+/* background-color */
 .bg-color-bookpage {
     background-color: #f2dcb1 ;
+}
+
+.bg-color-dark {
+    /* 
+    background-color: #3a3c3d;  
+    */
+    background-color: #1e222a; 
 }
 
 .bg-color-book1 {
@@ -102,6 +109,10 @@ body {
     background-color: white;
 }
 
+.bg-color-for-dark {
+    background-color: #3beba2;
+}
+
 /* for word/word2 in heartsutra_yuanying */
 .bg-color-bbe4e9 {
     background-color: #bbe4e9;
@@ -113,6 +124,13 @@ body {
     color: #dc2f2f;
 }
 
+.color-light {
+    /* color: #e6f0e3; */
+    /*
+    color:  #d2d5d8;
+    */
+    color: #ccd0cc;
+}
 
 .stretch-100 {
     height: 100%;
@@ -200,6 +218,7 @@ sup {
 }
 
 /* unicode */
+/* unicode-table.com */
 .uni-horse::before {
     content: '\265E \0020';
     color: green;
