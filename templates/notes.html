@@ -91,7 +91,7 @@
 
     <div class="quote_block d-flex">
         <div></div>
-        <div class="flex-grow-1">
+        <div class="flex-grow-1 dividerInside">
             <div class="quote_header">
                 <div class="quotes">  子曰：＂由！誨汝知之乎？知之為知之，不知為不知，是知也。＂     </div>      <div class='info_zh'>  為政十七 </div>
             </div>
@@ -367,8 +367,10 @@
 
     <script>
 
+        /* HTMLElement.offsetWidth returns the layout width of an element as an integer.  */
+        /* Typically, offsetWidth is a measurement in pixels of the element's CSS width, including any borders, padding, and vertical scrollbars. */
         function countPaws() {
-            const divDisplay = document.querySelector("div.display");
+            const divDisplay = document.querySelector("div.dividerInside");
             let wd = divDisplay.offsetWidth;
             wd = Math.floor(wd / 23);
             console.log(wd);
