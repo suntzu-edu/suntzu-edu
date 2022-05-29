@@ -158,6 +158,29 @@
             </script>
         
     
+        
+            <script>
+                var newItem = $("<div></div>", {"class": "c-body-item"})
+                $("<a href= /collection/vicesOfPoliticalSystem/>  Vices of the Political System Of the United States   </a> ").appendTo(newItem)
+
+                var cat = 'constitution101'
+
+                if ( cat == 'heartsutra' ) {
+                    $("<span></span>", {
+                        "class": "info_zh",
+                        text: "[James Madison]"
+                    }).appendTo(newItem)
+                    $(".heartsutra").append(newItem)
+                } else if (cat == 'constitution101') {
+                    $("<span></span>", {
+                        "class": "info",
+                        text: "[James Madison]"
+                    }).appendTo(newItem)
+                    $(".constitution101").append(newItem)
+                }
+            </script>
+        
+    
 
 
 

@@ -22,9 +22,9 @@ category: constitution101
                 <button id='btn' class="d-none d-md-inline">隱藏註釋</button> 
             </div>
 
-            <!-- title block -->
-            <div class='mt-5 layout-c-45 '>
-                <div class=" text-center  lecture_title">
+            <!-- title-block-starts -->
+            <div class='mt-5 '>
+                <div class=" text-center  lecture_title layout-c-60">
                     LETTER TO JOHN JAY
                 </div>
 
@@ -32,19 +32,19 @@ category: constitution101
                     GEORGE WASHINGTON
                 </div>
 
-                <div>
+                <div id='sub_desc' class='layout-c-45'>
                   Washington writes here as a private citizen to Jay, who as Secretary of Foreign Affairs under the Articles of Confederation witnessed firsthand the Articles' shortcomings, as each state pursued a different foreign policy.
 
+                  <br>
+                    <div class="info">AUGUST 15, 1786</div>
                 </div>
-                <div class="info">AUGUST 15, 1786</div>
-
-            </div>  <!-- title block ends -->
+            </div>  <!-- title-block-ends -->
 
 
 
-            <!-- text block -->
-            <div id='lecture_text' class="clear-lr mt-5">
-                <div class='m-1_2em'>
+            <!-- text-block-starts -->
+            <div id='lecture_text' class="clear-lr mt-5 divGap-1_2em">
+                <div >
                     Dear Sir: 
                 </div>
 
@@ -115,6 +115,8 @@ category: constitution101
 <script>
     let b = document.querySelector('#btn');
     let col2 = document.querySelector('#col2');
+    let sub_desc = document.querySelector('#sub_desc');
+
     b.addEventListener('click', event => {
         switch (b.textContent) {
             case '隱藏註釋': 
@@ -123,11 +125,15 @@ category: constitution101
                 col2.classList.remove('d-md-block');
                 col2.classList.add('d-none');
                 lecture_text.classList.add('layout-c-60');
+                sub_desc.classList.remove('layout-c-45');
+                sub_desc.classList.add('layout-c-32');
                 break;
             case '打開註釋':
                 b.textContent = '隱藏註釋';
                 col2.classList.remove('d-none');
                 lecture_text.classList.remove('layout-c-60')
+                sub_desc.classList.remove('layout-c-32');
+                sub_desc.classList.add('layout-c-45');
                 break;
         }
     });

@@ -251,11 +251,18 @@ sup {
     margin-bottom: 1.2em;
 }
 
+.divGap-0_8em > div {
+    margin-bottom: 0.8em;
+}
+
+
 
 /* gap between divs under #lecture_text */
+/*
 #lecture_text > div + div {
     margin-bottom: 1.2em;
 }
+*/
 
 
 .m-1_2em {
@@ -280,6 +287,11 @@ sup {
 
 .lecture_title {
     font-size: 3em;
+    color: #e85b48;
+}
+
+.lecture_title2 {
+    font-size: 2em;
     color: #e85b48;
 }
 
