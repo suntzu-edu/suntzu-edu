@@ -24,6 +24,7 @@ body {
 
 
 
+
 .star-item {
     margin-top: 1em;
 }
@@ -255,6 +256,12 @@ sup {
     margin-bottom: 0.8em;
 }
 
+/* border */
+.bd-notes {
+    border: 2px #ffc107  dashed;
+    border-radius: 5px;
+    padding: 1em;
+}
 
 
 /* gap between divs under #lecture_text */

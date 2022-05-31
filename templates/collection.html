@@ -4,8 +4,8 @@
 {% block content %}
 
     <div class="container-fluid layout-c-32 mt-3 bg-color-bookpage stretch-100">
-        <div class="heartsutra">
-            <h4>心經</h4>
+        <div id="heartsutra">
+            <h4>Religion</h4>
         </div>
 
     </div>
@@ -13,13 +13,21 @@
 
     <div class="container-fluid layout-c-32 mt-3 bg-color-bookpage stretch-100">
 
-        <div class="constitution101">
+        <div id="constitution101">
             <h4>US Constitution 101</h4>
         </div>
 
 
     </div>
 
+    <div class="container-fluid layout-c-32 mt-3 bg-color-bookpage stretch-100">
+
+        <div id="philosophy">
+            <h4>Philosophy</h4>
+        </div>
+
+
+    </div>
 
     {% for page in pages %}
         {% if page.path.startswith('collection') %}
@@ -34,13 +42,19 @@
                         "class": "info_zh",
                         text: "[{{page.author}}]"
                     }).appendTo(newItem)
-                    $(".heartsutra").append(newItem)
+                    $("#heartsutra").append(newItem)
                 } else if (cat == 'constitution101') {
                     $("<span></span>", {
                         "class": "info",
                         text: "[{{page.author}}]"
                     }).appendTo(newItem)
-                    $(".constitution101").append(newItem)
+                    $("#constitution101").append(newItem)
+                } else if (cat == 'philosophy') {
+                    $("<span></span>", {
+                        "class": "info",
+                        text: "[{{page.author}}]"
+                    }).appendTo(newItem)
+                    $("#philosophy").append(newItem)
                 }
             </script>
         {% endif %}

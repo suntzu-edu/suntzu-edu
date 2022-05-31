@@ -48,8 +48,8 @@
     
 
     <div class="container-fluid layout-c-32 mt-3 bg-color-bookpage stretch-100">
-        <div class="heartsutra">
-            <h4>心經</h4>
+        <div id="heartsutra">
+            <h4>Religion</h4>
         </div>
 
     </div>
@@ -57,14 +57,51 @@
 
     <div class="container-fluid layout-c-32 mt-3 bg-color-bookpage stretch-100">
 
-        <div class="constitution101">
+        <div id="constitution101">
             <h4>US Constitution 101</h4>
         </div>
 
 
     </div>
 
+    <div class="container-fluid layout-c-32 mt-3 bg-color-bookpage stretch-100">
 
+        <div id="philosophy">
+            <h4>Philosophy</h4>
+        </div>
+
+
+    </div>
+
+    
+        
+            <script>
+                var newItem = $("<div></div>", {"class": "c-body-item"})
+                $("<a href= /collection/ethics/>  Nicomachean Ethics   </a> ").appendTo(newItem)
+
+                var cat = 'philosophy'
+
+                if ( cat == 'heartsutra' ) {
+                    $("<span></span>", {
+                        "class": "info_zh",
+                        text: "[Aristotle]"
+                    }).appendTo(newItem)
+                    $("#heartsutra").append(newItem)
+                } else if (cat == 'constitution101') {
+                    $("<span></span>", {
+                        "class": "info",
+                        text: "[Aristotle]"
+                    }).appendTo(newItem)
+                    $("#constitution101").append(newItem)
+                } else if (cat == 'philosophy') {
+                    $("<span></span>", {
+                        "class": "info",
+                        text: "[Aristotle]"
+                    }).appendTo(newItem)
+                    $("#philosophy").append(newItem)
+                }
+            </script>
+        
     
         
             <script>
@@ -78,13 +115,19 @@
                         "class": "info_zh",
                         text: "[John Jay]"
                     }).appendTo(newItem)
-                    $(".heartsutra").append(newItem)
+                    $("#heartsutra").append(newItem)
                 } else if (cat == 'constitution101') {
                     $("<span></span>", {
                         "class": "info",
                         text: "[John Jay]"
                     }).appendTo(newItem)
-                    $(".constitution101").append(newItem)
+                    $("#constitution101").append(newItem)
+                } else if (cat == 'philosophy') {
+                    $("<span></span>", {
+                        "class": "info",
+                        text: "[John Jay]"
+                    }).appendTo(newItem)
+                    $("#philosophy").append(newItem)
                 }
             </script>
         
@@ -101,13 +144,19 @@
                         "class": "info_zh",
                         text: "[唐三藏法師玄奘]"
                     }).appendTo(newItem)
-                    $(".heartsutra").append(newItem)
+                    $("#heartsutra").append(newItem)
                 } else if (cat == 'constitution101') {
                     $("<span></span>", {
                         "class": "info",
                         text: "[唐三藏法師玄奘]"
                     }).appendTo(newItem)
-                    $(".constitution101").append(newItem)
+                    $("#constitution101").append(newItem)
+                } else if (cat == 'philosophy') {
+                    $("<span></span>", {
+                        "class": "info",
+                        text: "[唐三藏法師玄奘]"
+                    }).appendTo(newItem)
+                    $("#philosophy").append(newItem)
                 }
             </script>
         
@@ -124,13 +173,19 @@
                         "class": "info_zh",
                         text: "[圓瑛大師]"
                     }).appendTo(newItem)
-                    $(".heartsutra").append(newItem)
+                    $("#heartsutra").append(newItem)
                 } else if (cat == 'constitution101') {
                     $("<span></span>", {
                         "class": "info",
                         text: "[圓瑛大師]"
                     }).appendTo(newItem)
-                    $(".constitution101").append(newItem)
+                    $("#constitution101").append(newItem)
+                } else if (cat == 'philosophy') {
+                    $("<span></span>", {
+                        "class": "info",
+                        text: "[圓瑛大師]"
+                    }).appendTo(newItem)
+                    $("#philosophy").append(newItem)
                 }
             </script>
         
@@ -147,13 +202,19 @@
                         "class": "info_zh",
                         text: "[George Washington]"
                     }).appendTo(newItem)
-                    $(".heartsutra").append(newItem)
+                    $("#heartsutra").append(newItem)
                 } else if (cat == 'constitution101') {
                     $("<span></span>", {
                         "class": "info",
                         text: "[George Washington]"
                     }).appendTo(newItem)
-                    $(".constitution101").append(newItem)
+                    $("#constitution101").append(newItem)
+                } else if (cat == 'philosophy') {
+                    $("<span></span>", {
+                        "class": "info",
+                        text: "[George Washington]"
+                    }).appendTo(newItem)
+                    $("#philosophy").append(newItem)
                 }
             </script>
         
@@ -170,13 +231,19 @@
                         "class": "info_zh",
                         text: "[James Madison]"
                     }).appendTo(newItem)
-                    $(".heartsutra").append(newItem)
+                    $("#heartsutra").append(newItem)
                 } else if (cat == 'constitution101') {
                     $("<span></span>", {
                         "class": "info",
                         text: "[James Madison]"
                     }).appendTo(newItem)
-                    $(".constitution101").append(newItem)
+                    $("#constitution101").append(newItem)
+                } else if (cat == 'philosophy') {
+                    $("<span></span>", {
+                        "class": "info",
+                        text: "[James Madison]"
+                    }).appendTo(newItem)
+                    $("#philosophy").append(newItem)
                 }
             </script>
         
