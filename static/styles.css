@@ -23,8 +23,6 @@ body {
 }
 
 
-
-
 .star-item {
     margin-top: 1em;
 }
@@ -46,6 +44,13 @@ body {
     background-color: rgb(200, 200, 200);
 }
 
+/* color */
+
+.green-1 {
+/* used for comments and translations in Chinese */
+    color: rgb(63, 191, 191);
+}
+
 .color1 {
     color: rgba(109, 91, 223, 1);
 }
@@ -65,6 +70,7 @@ body {
 }
 
 
+/* layout */
 .layout-c-32 {
     width: 32%;
     max-width: 510px;
@@ -83,7 +89,17 @@ body {
     margin: 0 auto;
 }
 
+/* center */
+.center {
+    text-align: center;
+}
 
+/* in ethics, each book as an anchor has a box and is centered*/
+.border-bk {
+    border: 2px dashed black;
+    padding: 5px;
+    display: inline;
+}
 
 
 /* background-color */
@@ -118,6 +134,14 @@ body {
 .bg-color-bbe4e9 {
     background-color: #bbe4e9;
 }
+
+/* for btn-notes background color */
+.bg-color-green-1 {
+    background-color: rgb(63, 191, 191);
+}
+
+
+
 
 .color-dc2f2f {
     /* color: #c24d2c; 
@@ -157,15 +181,12 @@ div.quote_block div:nth-child(1)::before {
 }
 */
 
-div.quote_block .arrow {
-    padding-right: 15px;
-}
 
+/* each quote_block of which there is an arrow to the left */
 div.quote_block > div:nth-child(1)::before {
     content: "\27AB";
     padding-right: 1em;
 }
-
 
 
 /* English text||quotes  */
@@ -199,11 +220,31 @@ sup {
     font-style: italic;
 }
 
+.float-r {
+    float: right;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+
 .info_zh {
     float: right;
     font-size: 0.95em;
     padding-right: 2em;
 }
+
+.square-bracket::before {
+    content: "\005B";
+    color: red;
+}
+
+.square-bracket::after {
+    content: "\005D";
+    color: red;
+}
+
 
 
 .list-group {
@@ -238,13 +279,20 @@ sup {
 
 
 /* margin */
-.indent-1em > p {
+.indent-1em-pg > p {
+    /* index.html */
     margin-left: 1em;
 }
 
-.indent-1em > div {
+.indent-1em-pg > div {
+    /* index.html */
     margin-left: 1em;
 }
+
+.indent-1em {
+    margin-left: 1em;
+}
+
 
 /* gap */
 
@@ -341,9 +389,19 @@ span.word2 {
 
 }
 
-.f-size-1_1{
+.f-size-1_1 {
     font-size: 1.1em;
 }
+
+.f-size-0_9em {
+    font-size: 0.9em;
+}
+
+/* button-notes */
+button.btn-notes {
+}
+
+
 
 
 
