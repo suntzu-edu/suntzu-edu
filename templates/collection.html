@@ -31,6 +31,19 @@
 
     </div>
 
+
+    <div class="container-fluid layout-c-32 mt-3 bg-color-bookpage stretch-100">
+
+        <div id="bible_ch">
+            <h4>聖經翻譯</h4>
+        </div>
+
+
+    </div>
+
+
+
+
     {% for page in pages %}
         {% if page.path.startswith('collection') %}
             <script>
@@ -57,7 +70,14 @@
                         text: "[{{page.author}}]"
                     }).appendTo(newItem)
                     $("#philosophy").append(newItem)
+                } else if (cat == 'bible_ch') {
+                    $("<span></span>", {
+                        "class": "info",
+                        text: "[{{page.author}}]"
+                    }).appendTo(newItem)
+                    $("#bible_ch").append(newItem)
                 }
+
             </script>
         {% endif %}
     {% endfor %}
